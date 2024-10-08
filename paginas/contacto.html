@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Conector con php -->
+    <form action="../paginas/formulario.php"></form>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand">Pereira</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/cultura.html">Cultura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/gastronomia.html"
+              >Gastronomía</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/turismo.html">Turismo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container-contacto">
+      <div class="imagen-contacto">
+        <img src="../image/contacto.jpg" alt="Descripción de la imagen" />
+      </div>
+      
+      <div class="info-contacto">
+        <h2>Contacto ¡Trabajemos Juntos!</h2>
+        <p>
+          Si deseas consultar mayor información sobre nuestros servicios o
+          tienes alguna duda, no dudes en contactarnos. Un asesor te atenderá lo
+          más pronto posible.
+        </p>
+        <p>
+          <strong>Teléfono:</strong> +57 313 396 1912<br />
+          <strong>Email:</strong> info@tusitio.com<br />
+          <strong>Dirección:</strong> Calle 123, Pereira, Colombia
+        </p>
+      </div>
+    
+      <div class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="formulario.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+    
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+    
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" />
+    
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer>
+      <p>&copy; 2024 Pereira. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

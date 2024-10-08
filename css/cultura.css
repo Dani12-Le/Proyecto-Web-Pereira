@@ -1,0 +1,157 @@
+/* Estilos personalizados para los enlaces de navegación */
+.navbar-brand {
+  font-weight: bold; /* N
+  egrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #1f1f1f !important;
+  font-size: 25px !important;
+}
+/* Estilo normal de los enlaces */
+.nav-link {
+  color: #7c7c7c !important;
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 0.1s ease;
+}
+
+/* Estilo al pasar el mouse */
+.nav-link:hover {
+  color: #020202e1 !important; /* Color al pasar el mouse */
+  text-decoration: underline;
+  transform: translateY(-3px);
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Eliminar el borde naranja */
+  box-shadow: 0 0 5px 2px rgb(121, 121, 121); /* Agregar un borde de sombra */
+}
+
+/* Encabezado con contorno */
+.header-cultura {
+  background-image: url("../image/pereira-cultura.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 15px;
+  background-attachment: fixed; /* Efecto de fondo fijo */
+}
+
+/* Capa de oscurecimiento sobre la imagen de fondo */
+.header-cultura::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Oscurecimiento para mejor contraste */
+}
+
+.outlined-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 65px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: -100px;
+  text-shadow: 2px 2px 5px rgb(255, 168, 86);
+}
+
+/* Ajustar el estilo de los subtítulos h4 */
+.section-cultura h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #494949; /* Línea debajo del título */
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Estilo del párrafo */
+.header-cultura p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #fcf7f3;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.329);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Añadir sombra al párrafo */
+.section-cultura {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.911);
+  margin: 2% 50px;
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.section-cultura p {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Espacio entre encabezado y contenido */
+.header-cultura + .section-cultura {
+  margin-top: -30px; /* Sube el contenido para solaparlo con la imagen */
+}
+
+.section-img {
+  position: relative; /* Añadir posición relativa */
+  z-index: 1; /* Asegurar que esté al frente */
+  transition: transform 0.3s ease; /* Efecto de hover */
+  overflow: hidden; /* Evita que la imagen sobresalga */
+  width: 50%;
+  margin-left: 25%;
+}
+
+.section-img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.section-img img {
+  width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+  height: 350px; /* Establecer una altura fija */
+  object-fit: cover; /* Mantener la relación de aspecto sin distorsión */
+  border-radius: 2%; /* Bordes redondeados */
+  margin: 0 auto; /* Centrar la imagen */
+  display: block; /* Asegura que no haya espacios indeseados */
+}
+
+/* Footer */
+footer {
+  background-color: #2b3a67;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 5px solid #f77f00;
+  margin: 0.5%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,260 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos personalizados para los enlaces de navegación */
+.navbar-brand {
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #1f1f1f !important;
+  font-size: 25px !important;
+}
+
+/* Estilo normal de los enlaces */
+.nav-link {
+  color: #7c7c7c !important; /* Asegúrate de sobrescribir estilos predeterminados */
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 0.1s ease;
+}
+
+/* Estilo al pasar el mouse */
+.nav-link:hover {
+  color: #020202e1 !important; /* Color al pasar el mouse */
+  text-decoration: underline;
+  transform: translateY(-3px);
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Eliminar el borde naranja */
+  box-shadow: 0 0 5px 2px rgb(121, 121, 121); /* Agregar un borde de sombra */
+}
+
+/* Estilo para el encabezado de historia */
+.header-historia {
+  background-image: url("../image/historiaPereira.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Capa de oscurecimiento sobre la imagen de fondo */
+.header-historia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Oscurecimiento para mejor contraste */
+  z-index: 0;
+}
+
+/* Estilo del título */
+.header-historia h1 {
+  font-size: 62px !important;
+  font-weight: 700 !important;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 0; /* Remover margen superior */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Estilo para el párrafo */
+.header-historia p {
+  font-size: 1.1rem;
+  z-index: 1;
+  position: relative;
+  margin-top: -15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-family: cursive;
+}
+
+/* Estilo para el carrusel de imágenes */
+.carousel-inner {
+  max-height: 550px; /* Ajuste de altura para mantener la proporción */
+}
+
+.carousel-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Recorta la imagen si es necesario para cubrir todo el espacio */
+}
+
+/* Estilo para las flechas de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(10, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Sección historia (márgenes y fondo) */
+.section-historia {
+  margin: 2% 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-top: -0% !important;
+}
+
+/* Texto dentro de la sección historia */
+.section-historia p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Estilo para títulos en la sección */
+.section-historia h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #444;
+  font-family: "Georgia", serif;
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .header-historia {
+    padding: 20px;
+    height: auto;
+  }
+
+  .header-historia h1 {
+    font-size: 2rem;
+  }
+
+  .header-historia p {
+    font-size: 0.9rem;
+  }
+
+  .section-historia {
+    margin: 5% 10px;
+  }
+
+  /* Ajustes para el carrusel */
+  .carousel-inner {
+    max-height: 250px;
+  }
+
+  .carousel-item img {
+    max-height: 250px;
+  }
+}
+
+/* Ajustes para tabletas */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-historia {
+    padding: 40px;
+    height: auto;
+  }
+
+  .header-historia h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-historia p {
+    font-size: 1rem;
+  }
+
+  .section-historia {
+    margin: 5% 20px;
+  }
+
+  /* Ajustes para el carrusel */
+  .carousel-inner {
+    max-height: 300px;
+  }
+
+  .carousel-item img {
+    max-height: 300px;
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorios) */
+@media (min-width: 769px) {
+  .header-historia {
+    padding: 80px;
+    height: 750px;
+  }
+
+  .header-historia h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-historia p {
+    font-size: 1.1rem;
+  }
+
+  .section-historia {
+    margin: 2% 50px;
+  }
+
+  /* Ajustes para el carrusel */
+  .carousel-inner {
+    max-height: 550px;
+  }
+
+  .carousel-item img {
+    max-height: 550px;
+  }
+}
+
+.outlined-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 65px;
+}
+
+.mapa-pereira {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden; /* Para que el borde del mapa se vea redondeado */
+  padding: 2%;
+}
+
+.mapa-pereira h3 {
+  font-size: 1.8rem;
+  color: #242424;
+  margin-bottom: 15px; /* Separación entre el título y el mapa */
+  font-family: Arial, sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: #555555;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 5px solid #a8a8a8;
+  margin: 0.5%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}

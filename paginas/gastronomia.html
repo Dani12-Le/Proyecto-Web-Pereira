@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gastronomía</title>
+    <link rel="stylesheet" href="../css/gastronomia.css" />
+  </head>
+  <body>
+    <!-- Menú de navegación -->
+    <nav>
+      <a class="navbar-brand">Pereira</a>
+      <ul class="navbar-nav">
+        <li><a href="../paginas/index.html">Inicio</a></li>
+        <li><a href="../paginas/historia.html">Historia</a></li>
+        <li><a href="../paginas/cultura.html">Cultura</a></li>
+        <li><a href="#gastronomia">Gastronomía</a></li>
+        <li><a href="../paginas/turismo.html">Turismo</a></li>
+      </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header id="gastronomia" class="header-gastronomia">
+      <h2 class="outlined-text">Gastronomía Pereirana</h2>
+      <p>
+        La gastronomía de Pereira destaca por su diversidad de sabores, donde lo
+        tradicional se fusiona con ingredientes frescos. Platos como la bandeja
+        paisa y el sancocho invitan a locales y turistas a disfrutar de una rica
+        herencia culinaria.
+      </p>
+    </header>
+    <!-- Carrusel de imágenes -->
+    <div class="carousel-container">
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <div class="carousel">
+        <!-- Bandeja Paisa -->
+        <div class="carousel-item">
+          <img src="../image/bandeja-paisaGas.jpg" alt="Bandeja Paisa" />
+          <p class="dish-title">Bandeja Paisa</p>
+          <div class="description">
+            <p>Plato típico con fríjoles, arroz, huevo y más.</p>
+          </div>
+          <button onclick="window.location.href='#bandeja-paisa'">
+            ver más
+          </button>
+        </div>
+
+        <!-- Sancocho -->
+        <div class="carousel-item">
+          <img src="../image/sancocho.jpg" alt="Sancocho" />
+          <p class="dish-title">Sancocho</p>
+          <div class="description">
+            <p>Caldo con carnes, plátano y yuca.</p>
+          </div>
+          <button onclick="window.location.href='#sancocho'">ver más</button>
+        </div>
+
+        <!-- Chunchullo -->
+        <div class="carousel-item">
+          <img src="../image/chunchullo.jpg" alt="Chunchullo" />
+          <p class="dish-title">Chunchullo</p>
+          <div class="description">
+            <p>Deliciosas tripas fritas crocantes.</p>
+          </div>
+          <button
+            onclick="window.location.href='#chunchullo'"
+            class="button-chun"
+          >
+            ver más
+          </button>
+        </div>
+
+        <!-- Morcilla -->
+        <div class="carousel-item">
+          <img src="../image/morcilla.jpg" alt="Morcilla" />
+          <p class="dish-title">Morcilla</p>
+          <div class="description">
+            <p>Embutido a base de sangre cocida y arroz.</p>
+          </div>
+          <button onclick="window.location.href='#morcilla'">ver más</button>
+        </div>
+
+        <!-- Mazamorra -->
+        <div class="carousel-item">
+          <img src="../image/mazamorra.gif" alt="Mazamorra" />
+          <p class="dish-title">Mazamorra</p>
+          <div class="description">
+            <p>Postre tradicional a base de maíz.</p>
+          </div>
+          <button onclick="window.location.href='#mazamorra'">ver más</button>
+        </div>
+
+        <!-- Solteritas -->
+        <div class="carousel-item">
+          <img src="../image/solteritas.png" alt="Solteritas" />
+          <p class="dish-title">Solteritas</p>
+          <div class="description">
+            <p>Dulce crocante de harina y azúcar.</p>
+          </div>
+          <button onclick="window.location.href='#solteritas'">ver más</button>
+        </div>
+
+        <!-- Mondongo -->
+        <div class="carousel-item">
+          <img src="../image/mondongo.jpg" alt="Mondongo" />
+          <p class="dish-title">Mondongo</p>
+          <div class="description">
+            <p>Sopa espesa con callos y vegetales.</p>
+          </div>
+          <button onclick="window.location.href='#mondongo'">ver más</button>
+        </div>
+
+        <!-- Arepa -->
+        <div class="carousel-item">
+          <img src="../image/arepa.jpg" alt="Arepa" />
+          <p class="dish-title">Arepa</p>
+          <div class="description">
+            <p>Tortilla de maíz típica colombiana.</p>
+          </div>
+          <button onclick="window.location.href='#arepa'">ver más</button>
+        </div>
+
+        <!-- Obleas -->
+        <div class="carousel-item">
+          <img src="../image/obleas.jpg" alt="Obleas" />
+          <p class="dish-title">Obleas</p>
+          <div class="description">
+            <p>Postre fino relleno de dulce de leche.</p>
+          </div>
+          <button onclick="window.location.href='#obleas'">ver más</button>
+        </div>
+
+        <!-- Fritanga -->
+        <div class="carousel-item">
+          <img src="../image/fritanga.jpg" alt="Fritanga" />
+          <p class="dish-title">Fritanga</p>
+          <div class="description">
+            <p>Combinación de frituras y embutidos.</p>
+          </div>
+          <button onclick="window.location.href='#fritanga'">ver más</button>
+        </div>
+      </div>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+    <div class="plato-container">
+      <!-- Bandeja Paisa -->
+      <div id="bandeja-paisa" class="plato-detalle">
+        <h2>Bandeja Paisa</h2>
+        <p>
+          La Bandeja Paisa es uno de los platos más representativos de la región
+          antioqueña y del país entero. Este abundante platillo incluye frijoles
+          rojos, arroz blanco, carne molida, chicharrón, huevo frito, plátano
+          maduro, arepa, aguacate, chorizo y morcilla. Surgió como una comida
+          rica en calorías y proteínas, ideal para los campesinos y arrieros de
+          Antioquia que necesitaban energía para sus largas jornadas de trabajo.
+          Hoy en día, la Bandeja Paisa es un símbolo de la cocina colombiana,
+          conocida por su diversidad de sabores y su capacidad de satisfacer
+          incluso a los más hambrientos.
+        </p>
+      </div>
+
+      <!-- Sancocho -->
+      <div id="sancocho" class="plato-detalle">
+        <h2>Sancocho</h2>
+        <p>
+          El sancocho es una sopa tradicional en toda Colombia, y cada región
+          tiene su propia versión. En Pereira, el sancocho combina carnes
+          (pollo, res o cerdo), plátano verde, yuca, maíz, y papas. Este plato
+          tiene orígenes indígenas y ha sido adoptado a lo largo del tiempo por
+          la cultura mestiza. Se suele servir acompañado de arroz blanco y
+          aguacate, y es común disfrutarlo en reuniones familiares o
+          festividades.
+        </p>
+      </div>
+
+      <!-- Chunchullo -->
+      <div id="chunchullo" class="plato-detalle">
+        <h2>Chunchullo</h2>
+        <p>
+          El chunchullo, también conocido como chinchulín en otras regiones de
+          América Latina, es un platillo a base de intestinos de res o cerdo que
+          se fríen hasta quedar crujientes. En la región cafetera, el chunchullo
+          es apreciado como un aperitivo o acompañamiento durante las comidas.
+          Este plato tiene sus raíces en la cultura popular, donde se aprovechan
+          todas las partes del animal, y es muy común en asados y festividades
+          rurales.
+        </p>
+      </div>
+
+      <!-- Morcilla -->
+      <div id="morcilla" class="plato-detalle">
+        <h2>Morcilla</h2>
+        <p>
+          La morcilla es un embutido hecho principalmente de sangre de cerdo,
+          arroz, y especias. Es un platillo muy consumido en asados y
+          parrilladas colombianas, especialmente en la región andina. En
+          Pereira, la morcilla se acompaña a menudo de papas criollas o arepa.
+          Su historia se remonta a las tradiciones europeas traídas por los
+          colonos, que adaptaron el plato con ingredientes locales.
+        </p>
+      </div>
+
+      <!-- Mazamorra -->
+      <div id="mazamorra" class="plato-detalle">
+        <h2>Mazamorra</h2>
+        <p>
+          La mazamorra es un postre tradicional colombiano, especialmente
+          popular en las regiones andinas del país. Se prepara con maíz blanco
+          cocido en agua y se sirve con leche y azúcar o panela. En algunas
+          versiones, también se acompaña de bocadillo (dulce de guayaba). La
+          mazamorra tiene sus raíces en las culturas indígenas precolombinas,
+          que ya utilizaban el maíz como uno de los pilares de su dieta. Con el
+          tiempo, este platillo fue adoptado y adaptado por la gastronomía
+          criolla, convirtiéndose en un postre popular, especialmente en el
+          campo. En muchas familias colombianas, la mazamorra es símbolo de
+          tradición y un vínculo con los sabores de antaño.
+        </p>
+      </div>
+
+      <!-- Solteritas -->
+      <div id="solteritas" class="plato-detalle">
+        <h2>Solteritas</h2>
+        <p>
+          Las solteritas son un dulce típico colombiano, hecho con una masa
+          ligera y crujiente, generalmente cubierta con caramelo o crema
+          pastelera. En Pereira, se venden comúnmente en las calles o en ferias
+          locales. Este postre tiene una textura única y su sabor combina a la
+          perfección con una taza de café. Las solteritas, por su nombre
+          curioso, son conocidas por ser pequeñas y fáciles de comer, lo que las
+          convierte en un favorito para cualquier ocasión.
+        </p>
+      </div>
+
+      <!-- Mondongo -->
+      <div id="mondongo" class="plato-detalle">
+        <h2>Mondongo</h2>
+        <p>
+          El mondongo es una sopa espesa preparada con callos de res, papas,
+          zanahorias, y otras verduras. Es un plato muy nutritivo y sustancioso,
+          ideal para días fríos. En Pereira, el mondongo es una comida
+          tradicional que se sirve en grandes reuniones familiares o
+          celebraciones. Este plato tiene orígenes en las tradiciones culinarias
+          europeas y africanas, y con el tiempo ha sido adaptado al paladar
+          colombiano.
+        </p>
+      </div>
+
+      <!-- Arepa -->
+      <div id="arepa" class="plato-detalle">
+        <h2>Arepa</h2>
+        <p>
+          La arepa es un alimento básico en la dieta colombiana, y en la región
+          cafetera no es la excepción. Se trata de una tortilla plana hecha a
+          base de maíz, que puede ser asada o frita. En Pereira, es común
+          acompañarla con queso, mantequilla o hogao (una salsa de tomate y
+          cebolla). La arepa tiene una gran importancia cultural, y se cree que
+          su origen se remonta a las comunidades indígenas precolombinas. Hoy en
+          día, sigue siendo uno de los alimentos más representativos y
+          versátiles de Colombia.
+        </p>
+      </div>
+
+      <!-- Obleas -->
+      <div id="obleas" class="plato-detalle">
+        <h2>Obleas</h2>
+        <p>
+          Las obleas son un postre tradicional colombiano que consiste en dos
+          finas galletas rellenas de arequipe (dulce de leche), mermelada, queso
+          o incluso coco. En Pereira, es común encontrarlas en puestos
+          ambulantes, y son un dulce favorito para los locales y visitantes.
+          Aunque su origen es europeo, las obleas han sido adaptadas al gusto
+          colombiano con una variedad de sabores y rellenos. Son perfectas para
+          disfrutar en cualquier momento del día.
+        </p>
+      </div>
+
+      <!-- Fritanga -->
+      <div id="fritanga" class="plato-detalle">
+        <h2>Fritanga</h2>
+        <p>
+          La fritanga es una combinación de diferentes carnes y embutidos
+          fritos, como chicharrón, morcilla, chorizo y papas, que se sirve en
+          muchas regiones de Colombia. En Pereira, la fritanga se disfruta en
+          reuniones sociales, acompañada de una buena cerveza. Su origen está en
+          la necesidad de aprovechar al máximo las carnes disponibles, y con el
+          tiempo se ha convertido en un plato muy popular por su sabor intenso y
+          textura crujiente.
+        </p>
+      </div>
+    </div>
+
+    <!-- Script para controlar el carrusel -->
+    <script>
+      // Inicializa la variable para el índice de la diapositiva actual
+      let currentSlide = 0;
+
+      // Define cuántos elementos se mostrarán a la vez en el carrusel
+      const itemsToShow = 3;
+
+      // Obtiene el total de elementos de la clase "carousel-item"
+      const totalItems = document.querySelectorAll(".carousel-item").length;
+
+      // Selecciona el contenedor del carrusel
+      const carousel = document.querySelector(".carousel");
+
+      // Función para mover el carrusel hacia adelante o hacia atrás
+      function moveCarousel(direction) {
+        // Calcula el número máximo de diapositivas que se pueden mostrar
+        const maxSlide = Math.ceil(totalItems / itemsToShow) - 1;
+
+        // Si la dirección es positiva (hacia adelante) y no se ha alcanzado la última diapositiva
+        if (direction === 1 && currentSlide < maxSlide) {
+          currentSlide++; // Incrementa el índice de la diapositiva actual
+        }
+        // Si la dirección es negativa (hacia atrás) y no se ha alcanzado la primera diapositiva
+        else if (direction === -1 && currentSlide > 0) {
+          currentSlide--; // Decrementa el índice de la diapositiva actual
+        }
+
+        // Calcula el desplazamiento en porcentaje basado en el número de elementos a mostrar
+        const offset = -currentSlide * (100 / itemsToShow);
+
+        // Aplica el desplazamiento al estilo del contenedor del carrusel
+        carousel.style.transform = `translateX(${offset}%)`;
+      }
+    </script>
+
+    <footer>
+      <p>&copy; 2024 Gastronomía de Pereira. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

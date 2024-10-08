@@ -1,0 +1,238 @@
+body {
+  background-size: cover;
+}
+
+/* Estilo para el contenedor padre */
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos a los extremos */
+  align-items: center; /* Alinea verticalmente en el centro */
+  padding: 20px;
+}
+
+.encabezado {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: aliceblue;
+  margin: 0; /* Elimina el margen extra alrededor del h1 */
+  margin-left: 40px;
+}
+
+.colom {
+  color: aliceblue;
+  margin: 0;
+  margin-left: 41px;
+  font-family: "Roboto", sans-serif; /* Fuente moderna para "Colombia" */
+  font-size: 18px; /* Ajusta el tamaño */
+  font-weight: normal; /* Elimina la negrita */
+  letter-spacing: 4px; /* Ajusta el espaciado entre letras */
+}
+
+/* Estilo para el nav */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  margin-right: 50px;
+  margin-top: -40px; /* Ajusta el valor para subir el nav hacia arriba */
+  font-size: 19px;
+}
+
+nav a {
+  z-index: 100; /* Asegura que los enlaces estén por encima de otros elementos */
+  margin-left: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px;
+  transition: transform 0.3s ease; /* Suaviza el efecto */
+  cursor: pointer; /* Asegura que el cursor sea la manito */
+}
+
+/* Estilo para los enlaces en el hover */
+nav a:hover {
+  border-radius: 5px;
+  transform: translateY(
+    -7px
+  ); /* Eleva el enlace ligeramente en vez de escalarlo */
+}
+
+.texto-central {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: -10px;
+}
+
+.bienvenido_pereira {
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgb(255, 168, 86);
+}
+
+.capital_eje {
+  margin-top: -38px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.descubre {
+  margin-top: -28px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.experimenta {
+  font-size: 19px;
+  margin-top: -15px;
+}
+
+.explorar {
+  background-color: #f77f00;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 900;
+  text-align: center; /* Alineación del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+}
+
+.explorar:hover {
+  transform: scale(1.1); /* Agranda el texto al 110% */
+}
+
+.explora-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 3px; /* Espacio entre los elementos */
+  padding: 20px;
+  margin-top: 615px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.explora-item {
+  background-color: #f0f0f0e0; /* Fondo gris claro */
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-top: -8%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.explora-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /*filter: invert(100%);  Esto invierte los colores de la imagen */
+}
+
+.explora-item h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333; /* Texto oscuro para buen contraste */
+  font-weight: bold;
+}
+
+.explora-item p {
+  font-size: 16px;
+  color: #666; /* Texto gris oscuro */
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.explora-item:hover {
+  transform: translateY(-10px); /* Efecto al pasar el cursor */
+}
+
+/* Media queries para ajustar el diseño en diferentes dispositivos */
+
+@media (max-width: 1024px) {
+  .explora-section {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Se reduce de 4 a 2 columnas en tablets */
+    width: 70%; /* Se ajusta el ancho de la sección para mantener la proporcionalidad */
+  }
+
+  .encabezado {
+    font-size: 15px; /* Se reduce el tamaño del texto del encabezado */
+  }
+
+  .explora-item img {
+    width: 100px; /* Se ajusta el tamaño de las imágenes para adaptarse a una pantalla más pequeña */
+  }
+}
+
+@media (max-width: 768px) {
+  .explora-section {
+    grid-template-columns: 1fr; /* Se reduce a 1 columna en dispositivos móviles */
+    width: 90%; /* El ancho de la sección se ajusta a un 95% del contenedor */
+  }
+
+  .encabezado {
+    font-size: 30px; /* El tamaño del texto del encabezado se reduce aún más para pantallas móviles */
+  }
+
+  .explora-item img {
+    width: 100px; /* Se reduce el tamaño de las imágenes para adaptarse mejor al formato móvil */
+  }
+
+  .bienvenido_pereira {
+    font-size: 50px; /* Se ajusta el tamaño del texto de bienvenida para dispositivos móviles */
+  }
+}
+
+.explora-item a {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #2b3a67d7; /* Azul oscuro */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 5px solid #f77f00;
+  margin: 0;
+}
+
+footer p {
+  margin: 3px;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-social a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  color: #f77f00; /* Coral para enlaces */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}

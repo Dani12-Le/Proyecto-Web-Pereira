@@ -1,0 +1,277 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos personalizados para los enlaces de navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 17px;
+  font-size: 9.5px;
+}
+
+.navbar-brand {
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #1f1f1f;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -3px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 4px;
+  margin-right: 6px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #7c7c7c;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block; /* Asegura que el efecto de transformación se aplique */
+}
+
+.navbar-nav a:hover {
+  color: #020202e1;
+  transform: translateY(-3px) !important; /* Efecto de subir */
+}
+
+/* Encabezado con contorno */
+.header-gastronomia {
+  background-image: url("../image/gastronomia.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-attachment: fixed; /* Efecto para que la imagen no se mueva */
+}
+
+.header-gastronomia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.212); /* Oscurecimiento */
+}
+
+.outlined-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 65px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: -5%;
+}
+
+/* Estilo del párrafo */
+.header-gastronomia p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Carrusel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 92%; /* Tamaño del carrusel */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 2%;
+}
+
+.carousel-item {
+  min-width: calc(100% / 5);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 250px; /* Ajusta la altura de la imagen*/
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  border-radius: 10px 10px 0 0;
+  margin-top: -4.5%;
+}
+
+/* Estilos para el título del plato (dentro del carrusel) */
+.dish-title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  /* Texto en mayúsculas */
+  font-size: 150%;
+  margin: 10px 0;
+}
+
+/* Estilos para la descripción del plato */
+.description p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none; /* Texto en minúsculas */
+  font-weight: normal;
+  font-size: medium;
+  margin-top: 5px;
+  color: #333;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1; /* Asegúrate de que estén sobre otros elementos */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Estilos para el botón */
+button {
+  background-color: rgba(0, 0, 0, 0.849);
+  color: #fff7f7;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px auto; /* Centrar el botón horizontalmente */
+  display: block; /* Hace que el botón se comporte como un bloque y permita aplicar margen automático */
+}
+
+button:hover {
+  transform: scale(1.1); /* Agranda el texto al 110% */
+}
+
+/* Centrar el contenido dentro de cada item del carrusel */
+.carousel-item {
+  text-align: center; /* Centra todo el contenido del carousel-item */
+}
+
+/* Contenedor principal para los platos */
+.plato-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 25px; /* Espacio entre las celdas */
+  margin: 55px; /* Margen exterior del contenedor */
+  margin-top: 2%;
+}
+
+/* Estilo para los platos típicos */
+.plato-detalle {
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin: 15px auto; /* Centrando el contenedor y agregando espacio en los márgenes */
+  padding: 30px; /* Espaciado interno */
+  background-color: #fff; /* Fondo blanco */
+  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+.plato-detalle h2 {
+  font-size: 1.6em; /* Tamaño del título */
+  color: #111111; /* Color del título */
+  margin-bottom: 10px; /* Espacio inferior */
+  text-align: center; /* Centrar el texto */
+  text-transform: uppercase; /* Letras mayúsculas */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.plato-detalle p {
+  font-size: 1.1em; /* Tamaño de fuente del párrafo */
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin-bottom: 15px; /* Espacio inferior */
+  text-align: justify; /* Justificar el texto */
+  color: #333;
+  margin-top: 3%;
+}
+
+/* Estilo para enlaces (opcional) */
+.plato-detalle a {
+  color: #d9534f; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+}
+
+.plato-detalle a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .plato-detalle {
+    padding: 15px; /* Ajustar el espaciado en pantallas pequeñas */
+  }
+
+  .plato-detalle h2 {
+    font-size: 1.6em; /* Reducir tamaño del título */
+  }
+
+  .plato-detalle p {
+    font-size: 1em; /* Reducir tamaño del párrafo */
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #2b3a67;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 5px solid #f77f00;
+  margin: 0.5%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
